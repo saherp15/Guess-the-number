@@ -16,14 +16,14 @@ while game:
         print("Guess again.")
         attempts-=1
         if attempts==0:
-          print("You lose!")
+          print("You've run out of guesses.You lose!")
           game=False
       elif user<comp:
         print("Too low")
         print("Guess again.")
         attempts-=1
         if attempts==0:
-          print("You lose!")
+          print("You've run out of guesses.You lose!")
           game=False
       elif comp==user:
         print(f"You got it! The answer was {comp}. You guessed it in {attempts} attempts")
@@ -40,7 +40,7 @@ while game:
         print("Guess again.")
         attempts-=1
         if attempts==0:
-          print("You lose!")
+          print("You've run out of guesses.You lose!")
           game=False
           break
       elif user<comp:
